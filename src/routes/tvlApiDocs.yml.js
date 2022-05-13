@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from  'axios'
 
 const tvlDocsApiYamlUrl = "https://apidocs.insight360.io/index.yml";
 

@@ -54,83 +54,7 @@
 				</li>
 			</ul>
 
-			<ul class="links">
 
-				<li class="sub-menu products" class:open="{products}" on:mouseenter={openProducts} on:mouseleave={closeNav}>
-
-					<span class="top-level">Products <span class="icon-expand_more"></span></span>
-
-						<div class="dropdown" on:click={closeNav}>
-							<ul>
-								<li>
-									<a href="/products/infima-platform">Infima Platform</a>
-								</li>
-								<li>
-									<a href="/products/infima-libraries">Infima Libraries</a>
-								</li>
-								<li>
-									<a href="/products/infima-apis">Infima APIs</a>
-								</li>
-							</ul>
-						</div>
-
-				</li>
-
-				<li class="sub-menu solutions" class:open="{solutions}" on:mouseenter={openSolutions} on:mouseleave={closeNav}>
-
-					<span class="top-level">Solutions <span class="icon-expand_more"></span></span>
-
-						<div class="dropdown" on:click={closeNav}>
-							<ul>
-								<li>
-									<a href="/solutions/asset-managers">Asset Managers</a>
-								</li>
-								<li>
-									<a href="/solutions/dealers">Dealers</a>
-								</li>
-							</ul>
-						</div>
-
-				</li>
-
-				<li>
-
-					<a sveltekit:prefetch href="/insights">
-						Insights
-					</a>
-
-				</li>
-
-				<li class="sub-menu solutions" class:open="{about}" on:mouseenter={openAbout} on:mouseleave={closeNav}>
-
-					<span class="top-level">More <span class="icon-expand_more"></span></span>
-
-						<div class="dropdown" on:click={closeNav}>
-							<ul>
-								<li>
-									<a href="/about">About</a>
-								</li>
-								<li>
-									<a href="/news">News</a>
-								</li>
-							</ul>
-						</div>
-
-				</li>
-
-				<li>
-					<a href="https://app.infima.io" target="_blank">
-						Sign In
-					</a>
-				</li>
-
-				<li class="contact">
-					<a class="button primary-btn" href="/contact">
-						Talk to Us
-					</a>
-				</li>
-
-			</ul>
 
 			<ul class="mobile-toggle">
 				<li>
@@ -206,7 +130,6 @@
 	}
 	.inner {
 		width: 100%;
-		max-width: 1600px;
 		padding: .85rem 1.25rem;
 	}
 

@@ -1,18 +1,19 @@
 <script>
-  import createClient from '$lib/prismic' // Update the path
-  import * as prismicH from "@prismicio/helpers"
-
-  const client = createClient()
-  const prismicQuery = client.getSingle('homepage', 'homepage')
+    import { onMount } from 'svelte';
+    onMount(() => {
+        const redoc = document.createElement("redoc");
+        const spec_url = document.createAttribute('spec-url');
+        spec_url.value = 'https://infima-website-staging.s3.us-east-2.amazonaws.com/openapi/api.yaml';
+        redoc.setAttributeNode(spec_url);
+        const redoc_js = document.createElement("script");
+        const redoc_js_src = document.createAttribute('src');
+        redoc_js_src.value = "https://cdn.jsdelivr.net/npm/redoc@next/bundles/redoc.standalone.js";
+        redoc_js.setAttributeNode(redoc_js_src);
+        document.getElementById('documentation').appendChild(redoc);
+        document.getElementById('documentation').appendChild(redoc_js);
+    })
 </script>
-
-<h1>Prismic Svelte App</h1>
-
-{#await prismicQuery}
-  <p>Loading...</p>
-{:then document}
-  {@html prismicH.asHTML(document.data.heading)}
-{:catch error}
-  <p>Something went wrong:</p>
-  <pre>{error.message}</pre>
-{/await}
+<style></style>
+<!--<redoc spec-url='/api_doc.json'></redoc>-->
+<div id="documentation">
+</div>

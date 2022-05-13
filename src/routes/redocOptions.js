@@ -1,18 +1,19 @@
 const white = "#FFFFFF";
 const red = "#B64164";
-const purpleDark = "#482852";
-const purpleLight = "#793A84";
-const purple = "#61366E";
+const purpleDark = "#B829EB";
+const purple = "#B829EB";
+const linkPurple = "#c780ff";
 const green = "#128227";
 const orange = "#C48A3D";
-const grayLight = "#FAFAFA";
+const grayLight = "#888";
 const gray = "#F5F5F5";
 const blackMedium = "#333333";
 const blackLight = "#555555";
 const black = "#000000";
 const darkGray = "#222222";
-const codeBg = "#1D1F21";
-const mediumGray = "#27292B";
+const codeBg = "#000000";
+const mediumGray = "#444";
+const bg = "#1a191c";
 
 export default {
   hideDownloadButton: true,
@@ -31,29 +32,28 @@ export default {
       large: "105rem",
     },
     colors: {
-      tonalOffset: 0.3,
       primary: {
         main: black,
-        light: purpleLight,
-        dark: purpleLight,
+        light: purple,
+        dark: purple,
         contrastText: white,
       },
       success: {
-        main: black,
-        light: black,
-        dark: black,
+        main: white,
+        light: white,
+        dark: white,
         contrastText: white,
       },
       warning: {
-        main: black,
-        light: black,
-        dark: black,
+        main: white,
+        light: white,
+        dark: white,
         contrastText: white,
       },
       error: {
-        main: black,
-        light: black,
-        dark: black,
+        main: white,
+        light: white,
+        dark: white,
         contrastText: white,
       },
       gray: {
@@ -61,28 +61,28 @@ export default {
         100: gray,
       },
       text: {
-        primary: black,
-        secondary: black,
+        primary: white,
+        secondary: white,
       },
       border: {
-        dark: black,
+        dark: white,
         light: white,
       },
       responses: {
         success: {
-          color: black,
-          backgroundColor: grayLight,
+          color: white,
+          backgroundColor: darkGray,
         },
         error: {
-          color: black,
-          backgroundColor: grayLight,
+          color: white,
+          backgroundColor: darkGray,
         },
         redirect: {
-          color: black,
-          backgroundColor: grayLight,
+          color: white,
+          backgroundColor: darkGray,
         },
         info: {
-          color: black,
+          color: white,
           backgroundColor: grayLight,
         },
       },
@@ -100,14 +100,14 @@ export default {
       },
     },
     schema: {
-      linesColor: purpleLight,
+      linesColor: blackLight,
       defaultDetailsWidth: "75%",
-      typeNameColor: blackLight,
-      typeTitleColor: blackLight,
+      typeNameColor: grayLight,
+      typeTitleColor: grayLight,
       requireLabelColor: red,
       labelsTextSize: "0.9em",
       nestingSpacing: "1em",
-      nestedBackground: gray,
+      nestedBackground: blackLight,
       arrow: {
         size: "1.1em",
         color: blackLight,
@@ -117,14 +117,14 @@ export default {
       fontSize: "17px",
       lineHeight: "1.6em",
       fontWeightRegular: "400",
-      fontWeightBold: "600",
+      fontWeightBold: "500",
       fontWeightLight: "300",
       fontFamily: "Barlow, sans-serif",
       smoothing: "auto",
       optimizeSpeed: false,
       headings: {
         fontFamily: "Barlow, sans-serif",
-        fontWeight: "600",
+        fontWeight: "500",
         lineHeight: "1.6em",
       },
       code: {
@@ -132,21 +132,21 @@ export default {
         fontFamily: "Roboto Mono, monospace",
         lineHeight: "1.6em",
         fontWeight: "400",
-        color: blackLight,
-        backgroundColor: grayLight,
+        color: white,
+        backgroundColor: mediumGray,
         wrap: true,
       },
       links: {
-        color: purple,
-        visited: purpleLight,
-        hover: black,
+        color: linkPurple,
+        visited: linkPurple,
+        hover: linkPurple,
       },
     },
     sidebar: {
       width: "320px",
-      backgroundColor: white,
-      textColor: blackMedium,
-      activeTextColor: black,
+      backgroundColor: bg,
+      textColor: white,
+      activeTextColor: white,
       groupItems: {
         textTransform: "uppercase",
       },
@@ -164,7 +164,7 @@ export default {
       gutter: "2px",
     },
     rightPanel: {
-      backgroundColor: mediumGray,
+      backgroundColor: "rgba(0,0,0,.1)",
       width: "45%",
       textColor: white,
     },

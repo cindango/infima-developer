@@ -10,6 +10,7 @@ import Time from "svelte-time";
 	import '@fontsource/barlow-semi-condensed/300.css';
 	import '@fontsource/barlow-semi-condensed/400.css';
 	import '@fontsource/barlow-semi-condensed/500.css';
+	import '@fontsource/roboto-mono';
 	import { onMount } from 'svelte';
 	import Logo from './../lib/header/Logo.svelte';
 	import { navigating, page } from '$app/stores';
@@ -33,65 +34,6 @@ import Time from "svelte-time";
 </main>
 
 <footer>
-	<div class="container get-started">
-		<div>
-			<h2>Ready to get started?</h2>
-			<a rel="external" class="button primary-btn hover-pink" href="/contact">Talk to Us</a>
-		</div>
-	</div>
-	<div class="container footer-links">
-		<div class="grid sm:grid-cols-4 w-full gap-8">
-			<div class="info">
-				<strong><Logo /></strong>
-				<ul>
-					<li>One Franklin Parkway, Bldg 930</li>
-					<li>San Mateo, CA 94403</li>
-					<li><a href="tel:650-240-4950">650.240.4950</a></li>
-					<li><a href="mailto:info@infima.io">info@infima.io</a></li>
-					<li><a href="https://www.linkedin.com/company/infima1/" target="_blank"><img src="/Icon_LinkedIn.svg" alt="LinkedIn" width="20" height="20" /></a>
-				</ul>
-			</div>
-			<div class="flex gap-8 flex-col">
-				<div>
-					<strong>Products</strong>
-					<ul>
-						<li><a href="/products/infima-platform">Infima Platform</a></li>
-						<li><a href="/products/infima-libraries">Infima Libraries</a></li>
-						<li><a href="/products/infima-apis">Infima APIs</a></li>
-					</ul>
-				</div>
-				<div>
-					<strong>Solutions</strong>
-					<ul>
-						<li><a href="/solutions/asset-managers">Asset managers</a></li>
-						<li><a href="/solutions/dealers">Dealers</a></li>
-					</ul>
-				</div>
-			</div>
-			<div>
-				<strong>Insights</strong>
-				<ul>
-					<li><a rel="external" href="/insights">All Insights</a></li>
-					<li><a rel="external" href="/insights?category=research-paper">Research Papers</a></li>
-					<li><a rel="external" href="/insights?category=market-map">Market Maps</a></li>
-					<li><a rel="external" href="/insights?category=white-paper">White Papers</a></li>
-				</ul>
-			</div>
-			<div>
-				<strong>About Us</strong>
-				<ul>
-					<li><a href="/tech">Technology</a></li>
-					<li><a href="/about">Company</a></li>
-					<li><a href="/news">News</li>
-					<li><a rel="external" href="/contact">Contact</a></li>
-					<li><a href="https://docs.infima.io" target="_blank">Developer</a></li>
-					<li><a href="https://infima.freshteam.com/jobs" target="_blank">Careers</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="copywright flex-col sm:flex-row">
-			<div class="mr-6">© <Time timestamp="{new Date()}" format="YYYY" /> Infima. All Rights Reserved.</div><div><a href="/terms">Terms of Use</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="/privacy">Privacy</a></div>
-		</div>
 </footer>
 
 <style>
