@@ -29,12 +29,12 @@ main {
   background-color: transparent;
 }
 :global(#tvl-api-docs h1) {
-  font-size: 2em;
+  font-size: 2.25em;
   margin-bottom: 1rem;
 }
 
 :global(#tvl-api-docs .api-info h1) {
-  font-size: 2.75em;
+  font-size: 2.65em;
   margin-top: 90px;
 }
 
@@ -111,10 +111,17 @@ main {
   border-radius: 0;
 }
 
+:global(.api-content h2) {
+  font-size: 1.7rem;
+}
+
 :global(.api-content h3) {
   margin-top: 2.5em;
   margin-bottom: 1.5em;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
 }
 
 :global(.react-tabs__tab-list li) {
