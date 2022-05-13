@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-  <title>Truvalue Labs API</title>
+  <title>Infima Developer | API Docs</title>
 </svelte:head>
 
 <style>
