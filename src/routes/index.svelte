@@ -40,6 +40,8 @@ main {
 
 :global(#tvl-api-docs .api-content h5) {
   color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  padding-bottom: 5px;
 }
 
 :global(#tvl-api-docs .api-content h5 span) {
@@ -184,6 +186,14 @@ main {
 
 :global(#tvl-api-docs .api-content .kqeeTF table th), :global(#tvl-api-docs .api-content .kqeeTF table td) {
   border: 1px solid rgba(255,255,255,.15);
+}
+
+:global(.api-content .glCLbh) {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+:global(.api-content .sc-hHEiqL) {
+  margin-bottom: 30px;
 }
 
 </style>
