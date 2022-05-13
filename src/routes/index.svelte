@@ -196,6 +196,10 @@ main {
   margin-bottom: 30px;
 }
 
+:global(.api-content .kVNAbz:not(:last-of-type)::after) {
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
 </style>
 
 <div class="content">

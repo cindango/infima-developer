@@ -10,7 +10,7 @@ const gray = "#F5F5F5";
 const blackMedium = "#333333";
 const blackLight = "#555555";
 const black = "#000000";
-const darkGray = "#222222";
+const darkGray = "rgba(255,255,255, .05)";
 const codeBg = "#000000";
 const mediumGray = "#444";
 const bg = "#1a191c";
@@ -164,7 +164,7 @@ export default {
       gutter: "2px",
     },
     rightPanel: {
-      backgroundColor: "rgba(0,0,0,.1)",
+      backgroundColor: "#151416",
       width: "45%",
       textColor: white,
     },
