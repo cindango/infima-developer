@@ -4,7 +4,7 @@
 
   onMount(() => {
     Redoc.init(
-      "https://infima-developer-staging.s3.us-west-2.amazonaws.com/openapi_3.yaml",
+      "api.yaml",
       redocOptions,
       document.getElementById("tvl-api-docs")
     );
