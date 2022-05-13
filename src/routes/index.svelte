@@ -4,7 +4,7 @@
 
   onMount(() => {
     Redoc.init(
-      "api.yaml",
+      "https://infima-developer-staging.s3.us-west-2.amazonaws.com/openapi_3.yaml",
       redocOptions,
       document.getElementById("tvl-api-docs")
     );
@@ -17,7 +17,6 @@
 </svelte:head>
 
 <style>
-/* purgecss start ignore */
 main {
   padding-bottom: 0 !important;
 }
@@ -187,7 +186,6 @@ main {
   border: 1px solid rgba(255,255,255,.15);
 }
 
-/* purgecss end ignore */
 </style>
 
 <div class="content">
