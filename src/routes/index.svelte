@@ -4,7 +4,7 @@
 
   onMount(() => {
     Redoc.init(
-      "https://infima-developer-staging.s3.us-west-2.amazonaws.com/swagger_2.json",
+      "https://infima-developer-prod.s3.us-west-2.amazonaws.com/openapi_3.yaml",
       redocOptions,
       document.getElementById("tvl-api-docs")
     );
