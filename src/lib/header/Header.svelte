@@ -54,22 +54,10 @@
 				</li>
 			</ul>
 
-
-
-			<ul class="mobile-toggle">
-				<li>
-					<button aria-label="Mobile Menu" on:click={() => show_mobile_nav = !show_mobile_nav}>
-						<span class:close={show_mobile_nav} />
-						<span class:close={show_mobile_nav} />
-					</button>
-				</li>
-			</ul>
-
 		</nav>
 	</div>
 </header>
 
-<MobileNav bind:show={show_mobile_nav} />
 
 <style>
 	.mobile-toggle {
