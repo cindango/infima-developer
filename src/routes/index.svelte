@@ -211,6 +211,14 @@ main {
   color: #000;
 }
 
+:global(#tvl-api-docs .eHcrUC p) {
+  margin: 1rem 0;
+}
+
+:global(#tvl-api-docs ul) {
+  list-style-type: disc;
+}
+
 </style>
 
 <div class="content">
