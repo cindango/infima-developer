@@ -207,6 +207,10 @@ main {
     border-bottom: 1px solid rgba(255,255,255,.3);
 }
 
+:global(#tvl-api-docs .gmKlvX > span) {
+  color: #000;
+}
+
 </style>
 
 <div class="content">
